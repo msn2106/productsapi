@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "productName": "accumsan",
+    "productPrice": 380.25,
+    "productDescription": "Displaced osteochondral fracture of right patella, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion",
+    "productTitle": "Displ osteochon fx r patella, 7thR",
+    "productReviews": 0.62
+  },
+  {
+    "id": 2,
+    "productName": "in lacus",
+    "productPrice": 52.44,
+    "productDescription": "Person on outside of car injured in collision with railway train or railway vehicle in traffic accident, subsequent encounter",
+    "productTitle": "Person outside car inj in clsn w rail trn/veh in traf, subs",
+    "productReviews": 5.75
+  },
+  {
+    "id": 3,
+    "productName": "montes",
+    "productPrice": 497.08,
+    "productDescription": "Unspecified hearing loss, unspecified ear",
+    "productTitle": "Unspecified hearing loss, unspecified ear",
+    "productReviews": 2.18
+  },
+  {
+    "id": 4,
+    "productName": "orci",
+    "productPrice": 283.37,
+    "productDescription": "Bicipital tendinitis, left shoulder",
+    "productTitle": "Bicipital tendinitis, left shoulder",
+    "productReviews": 6.67
+  },
+  {
+    "id": 5,
+    "productName": "fusce",
+    "productPrice": 488.58,
+    "productDescription": "Nondisplaced fracture of navicular [scaphoid] of right foot, subsequent encounter for fracture with nonunion",
+    "productTitle": "Nondisp fx of navicular of r foot, subs for fx w nonunion",
+    "productReviews": 0.08
+  },
+  {
+    "id": 6,
+    "productName": "dui",
+    "productPrice": 196.25,
+    "productDescription": "Type 2 diabetes mellitus with other diabetic kidney complication",
+    "productTitle": "Type 2 diabetes mellitus w oth diabetic kidney complication",
+    "productReviews": 7.35
+  },
+  {
+    "id": 7,
+    "productName": "in",
+    "productPrice": 313.12,
+    "productDescription": "Other specified injury of ulnar artery at forearm level, left arm, subsequent encounter",
+    "productTitle": "Inj ulnar artery at forearm level, left arm, subs encntr",
+    "productReviews": 5
+  },
+  {
+    "id": 8,
+    "productName": "magnis",
+    "productPrice": 193.14,
+    "productDescription": "Maternal care for face, brow and chin presentation, other fetus",
+    "productTitle": "Maternal care for face, brow and chin presentation, oth",
+    "productReviews": 7.09
+  },
+  {
+    "id": 9,
+    "productName": "erat eros",
+    "productPrice": 139.37,
+    "productDescription": "Partial traumatic amputation at knee level, right lower leg, sequela",
+    "productTitle": "Partial traumatic amp at knee level, r low leg, sequela",
+    "productReviews": 3.21
+  },
+  {
+    "id": 10,
+    "productName": "nec",
+    "productPrice": 457.51,
+    "productDescription": "Vitamin A deficiency",
+    "productTitle": "Vitamin A deficiency",
+    "productReviews": 1.86
+  },
+  {
+    "productName": "Mayank Test",
+    "productPrice": 150,
+    "productDescription": "Sample Test Description",
+    "productTitle": "Sample Mayank Test Title",
+    "productReviews": "4.3",
+    "id": 11
+  },
+  {
+    "productName": "Mayank Test2",
+    "productPrice": 150.5,
+    "productDescription": "Sample Test Description",
+    "productTitle": "Sample Mayank Test Title",
+    "productReviews": "4.3",
+    "id": 12
+  }
+]
