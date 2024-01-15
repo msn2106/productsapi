@@ -37,7 +37,7 @@ app.get("/api/products/:id", (req, res) => {
 
 app.post("/api/products", (req, res) => {
   const body = req.body;
-  products.push({ ...body, id: products.length + 1, productPrice: parseFloat(body.productPrice) });
+  products.push({ id: products.length + 1, ...body, productPrice: parseFloat(body.productPrice) });
   fs.writeFile("./products.json", JSON.stringify(products), (err, data) => {
     console.log(`${err} occurred while writing data to file`);
     return res.json({
@@ -47,20 +47,43 @@ app.post("/api/products", (req, res) => {
   });
 });
 
+app.put("/api/products/:id", (req, res) => {
+  let id = Number(req.params.id);
+  const body = req.body;
+  const finalproducts = products.filter((x) => x.id !== id);
+  finalproducts.push({ id: id, ...body, productPrice: parseFloat(body.productPrice) });
+  fs.writeFile("./products.json", JSON.stringify(finalproducts), (err, data) => {
+    console.log(`${err} occurred while writing data to file`);
+    return res.json({
+      status: 200,
+      message: `Product with id ${id} Updated/Created successfully`,
+    });
+  });
+});
+
 app.patch("/api/products/:id", (req, res) => {
-  let { id } = req.params;
-  // const products = products.filter(x => x.id !== id);
-  // fs.writeFile('./')
-  return res.json({
-    status: 200,
-    message: `Product with id ${id} updated successfully`,
+  let id = Number(req.params.id);
+  if (!products.find((x) => x.id === id)) {
+    return res.json({
+      status: 404,
+      message: `Product with id ${id} Not Found`,
+    });
+  }
+  const body = req.body;
+  const finalproducts = products.filter((x) => x.id !== id);
+  finalproducts.push({ id: id, ...body, productPrice: parseFloat(body.productPrice) });
+  fs.writeFile("./products.json", JSON.stringify(finalproducts), (err, data) => {
+    console.log(`${err} occurred while writing data to file`);
+    return res.json({
+      status: 200,
+      message: `Product with id ${id} Updated successfully`,
+    });
   });
 });
 
 app.delete("/api/products/:id", (req, res) => {
   let { id } = req.params;
-  console.log(`deleted ${id}`);
-  const tempProducts = products.filter((x) => x.id !== id);
+  const tempProducts = products.filter((x) => x.id !== Number(id));
   console.log(tempProducts);
   fs.writeFile("./products.json", JSON.stringify(tempProducts), (err, data) => {
     console.log(`${err} occurred while writing data to file`);

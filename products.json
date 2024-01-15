@@ -78,21 +78,5 @@
     "productDescription": "Vitamin A deficiency",
     "productTitle": "Vitamin A deficiency",
     "productReviews": 1.86
-  },
-  {
-    "productName": "Mayank Test",
-    "productPrice": 150,
-    "productDescription": "Sample Test Description",
-    "productTitle": "Sample Mayank Test Title",
-    "productReviews": "4.3",
-    "id": 11
-  },
-  {
-    "productName": "Mayank Test2",
-    "productPrice": 150.5,
-    "productDescription": "Sample Test Description",
-    "productTitle": "Sample Mayank Test Title",
-    "productReviews": "4.3",
-    "id": 12
   }
 ]
